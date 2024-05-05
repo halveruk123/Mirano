@@ -1,20 +1,27 @@
-@use "../varibles" as *;
+@use '../varibles' as *;
 
-.header {
-    padding: 32px;
+.subscribe {
+    padding-top: 80px;
+    padding-bottom: 140px;
 
-    &__container {
-        display: grid;
-        align-items: center;
-        justify-content: space-between;
-        gap: 30px;
-        grid-template-columns: repeat(3, 1fr);
+    &__title {
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        text-align: center;
+        color: $green;
+        margin-bottom: 40px;
+
     }
 
     &__form {
         position: relative;
+        max-width: 524px;
         width: 100%;
         height: 40px;
+        margin: 0 auto;
     }
 
     &__input {
@@ -33,7 +40,7 @@
         }
     }
 
-    &__search-button {
+    &__button {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -45,24 +52,5 @@
         justify-content: center;
         border-radius:  32px;
         background-color: $light-orange;
-    }
-
-    &__logo {
-        justify-self: center;
-    }
-
-    &__cart-button {
-        background: url('/img/bag.svg') no-repeat center/contain;
-        width: 28px;
-        height: 28px;
-        justify-self: end;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        line-height: 1.5;
-        font-size: 14px;
-
-        text-align: center;
-        color:$orange;
     }
 }
